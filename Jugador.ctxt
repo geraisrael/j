@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Jugador
+comment0.text=\r\n\ Representa\ a\ un\ jugador\ con\ un\ nombre\ y\ una\ mano\ de\ fichas\ de\ domin\u00F3.\ \r\n\ Puede\ seleccionar\ fichas\ para\ jugar\ en\ su\ turno\ y\ tomar\ fichas\ del\ FichaAlmacen\ si\ es\ necesario.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Jugador()
+comment2.params=numeroJugador
+comment2.target=Jugador(int)
+comment3.params=mano
+comment3.target=void\ setMano(java.util.ArrayList)
+comment4.params=
+comment4.target=java.util.ArrayList\ getMano()
+comment5.params=
+comment5.target=int\ getNumero()
+comment6.params=monto
+comment6.target=void\ tomarFichaMonto(Monto)
+comment7.params=ficha\ tablero
+comment7.target=void\ ponerFichaTablero(FichaDomino,\ Tablero)
+numComments=8

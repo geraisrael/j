@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=
+comment1.target=void\ pruebaSumaFichas()
+comment1.text=public\ static\ void\ pruebaInicializacionJuego()\ {\r\n\ \ \ \ Juego\ juego\ \=\ new\ Juego();\r\n\ \ \ \ juego.inicializarJuego();\r\n\ \ \ \ \r\n\ \ \ \ for\ (Jugador\ jugador\ \:\ juego.getJugadores())\ {\r\n\ \ \ \ \ \ \ \ System.out.println("Jugador\ "\ +\ jugador.getNumero()\ +\ "\:\ "\ +\ jugador.getMano());\r\n\ \ \ \ }\r\n\r\n\ \ \ \ System.out.println("Jugador\ inicial\:\ "\ +\ juego.getTurno());\r\n}
+numComments=2
