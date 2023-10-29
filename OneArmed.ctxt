@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=OneArmed
+comment0.text=\r\n\ Clase\ que\ ejecuta\ el\ juego.\r\n\ \r\n\ @author\ (Gerardo\ G.\ Vazquez)\ \r\n\ @version\ (02/10/2023)\r\n
+comment1.params=
+comment1.target=OneArmed()
+comment2.params=
+comment2.target=void\ inicializarJuego()
+comment2.text=\r\n\ Metodo\ que\ inicializa\ el\ juego\ y\ termina\ cuando\ se\ encuentra\ un\ ganador.\r\n
+comment3.params=scanner
+comment3.target=int\ obtenerCantidadJugadores(java.util.Scanner)
+comment3.text=\r\n\ Metodo\ que\ regresa\ la\ cantidad\ de\ jugadores\ a\ jugar.\r\n
+comment4.params=cantidad\ scanner
+comment4.target=Jugador[]\ crearJugadores(int,\ java.util.Scanner)
+comment4.text=\r\n\ Metodo\ que\ crea\ a\ los\ jugadores\ y\ los\ mete\ al\ arreglo\ de\ jugadores.\r\n
+comment5.params=ficha\ tablero
+comment5.target=boolean\ movimientoValidoFicha(Ficha,\ java.util.ArrayList)
+comment5.text=\r\n\ Metodo\ que\ verifica\ si\ una\ ficha\ se\ puede\ poner\ en\ el\ tablero.\r\n
+comment6.params=jugadores
+comment6.target=int\ calcularPuntuacion(Jugador[])
+comment6.text=\r\n\ Metodo\ que\ calcula\ la\ puntuacion\ de\ todos\ los\ jugadores.\r\n
+comment7.params=tablero
+comment7.target=void\ mostrarTablero(java.util.ArrayList)
+comment7.text=\r\n\ Metodo\ que\ muestra\ las\ fichas\ que\ estan\ en\ el\ tablero.\r\n
+numComments=8

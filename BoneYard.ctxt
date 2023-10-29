@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BoneYard
+comment0.text=\r\n\ Clase\ que\ representa\ el\ boneyard(cementerio)\ del\ juego.\r\n\ \r\n\ @author\ (Gerardo\ G.\ Vazquez)\ \r\n\ @version\ (02/10/2023)\r\n
+comment1.params=
+comment1.target=BoneYard()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Boneyard\r\n
+comment2.params=numeroJugadores
+comment2.target=void\ llenarBoneYard(int)
+comment2.text=\r\n\ Metodo\ que\ crea\ las\ fichas\ dependiendo\ de\ la\ cantidad\ de\ jugadores.\r\n
+comment3.params=
+comment3.target=void\ mostrarBoneyard()
+comment3.text=\r\n\ Metodo\ que\ muestra\ las\ fichas\ que\ estan\ en\ el\ boneyard.\r\n
+comment4.params=jugadores
+comment4.target=void\ repartirFichasJugadores(Jugador[])
+comment4.text=\r\n\ Metodo\ que\ entrega\ las\ fichas\ iniciales\ a\ cada\ jugador.\r\n
+comment5.params=
+comment5.target=Ficha\ tomarFichaAleatoria()
+comment5.text=\r\n\ Metodo\ que\ entrega\ a\ cada\ jugador\ una\ ficha\ aleatoria.\r\n
+comment6.params=
+comment6.target=int\ numeroFichasRestantes()
+comment6.text=\r\n\ Metodo\ que\ regresa\ el\ tamano\ del\ boneyard.\r\n
+numComments=7

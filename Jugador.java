@@ -1,60 +1,82 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.*;
 /**
- * Representa a un jugador con un nombre y una mano de fichas de dominó. 
- * Puede seleccionar fichas para jugar en su turno y tomar fichas del FichaAlmacen si es necesario.
+ * Clase que representa el jugador del juego.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Gerardo G. Vazquez) 
+ * @version (02/10/2023)
  */
-public class Jugador
-{
-    private ArrayList<FichaDomino> mano;
-    private int numeroJugador;
-    private int puntos;
-    public Jugador()
-    {
-        mano = new ArrayList();
-        numeroJugador = 0;
-        puntos = 0;
+
+public class Jugador {
+    private String nombre;
+    private ArrayList<Ficha> mano;
+    private int puntuacion;
+
+    /*
+     * Constructor de la clase jugador.
+     */
+    public Jugador(String nombre) {
+        this.nombre = nombre;
+        this.mano = new ArrayList<>();
+        puntuacion = 0;
     }
     
-    public Jugador(int numeroJugador)
-    {
-        mano = new ArrayList();
-        this.numeroJugador = numeroJugador;
-        puntos = 0;
+    /*
+     * Metodo que regresa el nombre del jugador.
+     */
+    public String getNombre() {
+        return nombre;
     }
-    
-    public void setMano(ArrayList<FichaDomino> mano)
-    {
-        this.mano = mano;    
-    }
-    
-    public ArrayList<FichaDomino> getMano()
-    {
+
+    /*
+     * Metodo que regresa la mano del jugador.
+     */
+    public ArrayList<Ficha> getMano() {
         return mano;
     }
     
-    public int getNumero()
-    {
-        return numeroJugador;
+    /*
+     * metodo que regresa si el Array mano esta vacio.
+     */
+    public boolean isEmpty() {
+        return mano.isEmpty();
     }
     
-    public void tomarFichaMonto(Monto monto)
-    {
-        if(!monto.estaVacio())
-        {
-            FichaDomino ficha = monto.tomarFicha();
-            mano.add(ficha);
-        }
+    /*
+     * Metodo que recibe las fichas para el jugador.
+     */
+    public void recibirFicha(Ficha ficha) {
+        mano.add(ficha);
+    }
+
+    /*
+     * Metodo que reinicia mano.
+     */
+    public void reiniciarMano() {
+        mano.clear();
     }
     
-    public void ponerFichaTablero(FichaDomino ficha, Tablero tablero)
-    {
-        if(tablero.movimientoValido(ficha))
-        {
-            tablero.colocarFicha(ficha);
-            mano.remove(ficha);
+    /*
+     * Metodo que muestra la mano del jugador.
+     */
+    public void mostrarMano() {
+        System.out.println("Mano de " + nombre + ":");
+        for (Ficha ficha : mano) {
+            ficha.mostrar();
+            System.out.println(ficha.toString() + " ");
         }
+        
     }
+    
+    /*
+     * Metodo que calcula la suma de los puntos de sus fichas.
+     */
+    public int calcularPuntuacion() {
+        for (Ficha ficha : mano) {
+            puntuacion += ficha.getCara1() + ficha.getCara2();
+        }
+        return puntuacion;
+    }
+
 }
